@@ -1,0 +1,12 @@
+listcolor = ["Red", "Blue", "Green", "Black","Black"]
+
+print(listcolor)
+
+listcolor.remove("Black")
+print(listcolor)
+
+listcolor.pop(1)
+print(listcolor)
+
+listcolor.clear()
+print(listcolor)
