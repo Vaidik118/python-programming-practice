@@ -1,4 +1,3 @@
-#binary representation of integers.
 a = 10
 b = 6
 
