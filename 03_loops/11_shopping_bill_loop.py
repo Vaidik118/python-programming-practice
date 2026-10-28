@@ -9,7 +9,7 @@ while True:
     print("a. Apple    - ₹150")
     print("e. Exit")
 
-    choice = input("Enter choice: ").lower()
+    choice = input("Enter choice: ").lower().strip()
 
     if choice == "e":
         print("Thank you!")
@@ -28,11 +28,14 @@ while True:
     else:
         print("Invalid choice.")
         continue
+    try:
+        quantity = int(input("Enter quantity: "))
 
-    quantity = int(input("Enter quantity: "))
-
-    if quantity <= 0:
-        print("Quantity must be greater than 0.")
+        if quantity <= 0:
+            print("Quantity must be greater than 0.")
+            continue
+    except ValueError:
+        print("Invalid quantity. Please enter a whole number.")
         continue
 
     item_total = price * quantity
