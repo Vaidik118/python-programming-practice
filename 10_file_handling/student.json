@@ -1,0 +1,10 @@
+{
+    "name": "Vaidik",
+    "age": 21,
+    "city": "Ahmedabad",
+    "skills": [
+        "Python",
+        "Django",
+        "Machine Learning"
+    ]
+}
